@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Calculator.MainPage">
+
+    <Grid BackgroundColor="Black" Padding="5,0" ColumnSpacing="1" RowSpacing="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.ColumnSpan="4" Grid.Column="0" FontSize="48" FontAttributes="Bold" BackgroundColor="Black" Text="0" TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center" LineBreakMode="NoWrap" x:Name="ResultText"/>
+        <Button Grid.Row="1" Grid.Column="0" BackgroundColor="White" Text="7" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="1" Grid.Column="1" BackgroundColor="White" Text="8" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="1" Grid.Column="2" BackgroundColor="White" Text="9" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="1" Grid.Column="3" BackgroundColor="#FFA400" Text="/" FontSize="36" CornerRadius="0" Clicked="OnSelectOperator"/>
+        <Button Grid.Row="2" Grid.Column="0" BackgroundColor="White" Text="4" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="2" Grid.Column="1" BackgroundColor="White" Text="5" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="2" Grid.Column="2" BackgroundColor="White" Text="6" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="2" Grid.Column="3" BackgroundColor="#FFA400" Text="X" FontSize="36" CornerRadius="0" Clicked="OnSelectOperator"/>
+        <Button Grid.Row="3" Grid.Column="0" BackgroundColor="White" Text="1" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="3" Grid.Column="1" BackgroundColor="White" Text="2" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="3" Grid.Column="2" BackgroundColor="White" Text="3" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="3" Grid.Column="3" BackgroundColor="#FFA400" Text="-" FontSize="36" CornerRadius="0" Clicked="OnSelectOperator"/>
+        <Button Grid.Row="4" Grid.ColumnSpan="3" Grid.Column="0" Text="0" BackgroundColor="White" FontSize="36" CornerRadius="0" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="4" Grid.Column="3" Text="+" BackgroundColor="#FFA400" FontSize="36" CornerRadius="0" Clicked="OnSelectOperator"/>
+        <Button Grid.Row="5" Grid.Column="0" Text="C" BackgroundColor="#808080" FontSize="36" CornerRadius="0" Clicked="OnClear"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="3" Grid.Column="1" Text="=" BackgroundColor="#FFA400" FontSize="36" CornerRadius="0" Clicked="OnCalculate"/>
+        <StackLayout Grid.Row="6" Grid.Column="0">
+            <Button BackgroundColor="White" Text="Click me! I am delicious!" FontSize="36" CornerRadius="0" Clicked="OnNavigateToNewPage"/>
+        </StackLayout>
+    </Grid>
+
+
+</ContentPage>
